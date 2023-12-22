@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="400.0" prefWidth="647.0" style="-fx-background-color: F6F6F6;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Project">
+   <children>
+      <Label fx:id="Logo" layoutX="40.0" layoutY="25.0" prefHeight="18.0" prefWidth="61.0" text="TeamCo">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="362.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#ProjectPaneButton" style="-fx-background-color: F6F6F6;" text="project" />
+      <Pane fx:id="ProjectPane" layoutX="10.0" layoutY="69.0" prefHeight="322.0" prefWidth="626.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <Button layoutX="556.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#getFile" style="-fx-background-color: F6F6F6; -fx-border-color: D3D3D3; -fx-border-radius: 15;" text="Files" />
+            <TextArea fx:id="textArea" layoutX="282.0" layoutY="49.0" prefHeight="202.0" prefWidth="315.0" />
+            <ListView fx:id="fileListView" layoutX="45.0" layoutY="50.0" onMouseClicked="#openSelectedFile" prefHeight="200.0" prefWidth="180.0" />
+            <Button fx:id="saveButton" layoutX="556.0" layoutY="277.0" mnemonicParsing="false" onMouseClicked="#saveFile" text="Save" />
+            <Button fx:id="deleteButton" layoutX="174.0" layoutY="277.0" mnemonicParsing="false" onMouseClicked="#deleteFile" text="Delete" />
+         </children>
+      </Pane>
+      <Pane fx:id="TaskPane" layoutX="1.0" layoutY="60.0" prefHeight="322.0" prefWidth="626.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="60.0" />
+      <Pane fx:id="TeamPane" layoutX="-2.0" layoutY="56.0" prefHeight="322.0" prefWidth="626.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="56.0">
+         <children>
+            <TableView layoutX="258.0" layoutY="40.0" prefHeight="226.0" prefWidth="367.0">
+               <columns>
+                  <TableColumn prefWidth="142.4000244140625" text="name" />
+                  <TableColumn prefWidth="104.79998779296875" text="status" />
+                  <TableColumn prefWidth="118.20001220703125" text="role" />
+               </columns>
+            </TableView>
+            <Button layoutX="588.0" layoutY="281.0" mnemonicParsing="false" text="add" />
+            <Label layoutX="28.0" layoutY="52.0" prefHeight="27.0" prefWidth="68.0" text="Name : ">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="130.0" text="id:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="93.0" prefHeight="20.0" prefWidth="43.0" text="email :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="165.0" prefHeight="17.0" prefWidth="116.0" text="change password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button layoutX="282.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#TaskPaneButton" style="-fx-background-color: F6F6F6;" text="task" />
+      <Button layoutX="454.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#TeamPaneButton" style="-fx-background-color: F6F6F6;" text="team" />
+      </children>
+</AnchorPane>

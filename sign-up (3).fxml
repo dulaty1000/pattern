@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.SignUpController">
+   <children>
+      <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="325.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="325.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets right="650.0" />
+         </padding>
+         <children>
+            <Label alignment="CENTER" layoutX="88.0" layoutY="36.0" prefHeight="30.0" prefWidth="150.0" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="Brush Script MT Italic" size="44.0" />
+               </font>
+            </Label>
+            <Label fx:id="emptyField" alignment="CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="332.0" prefHeight="21.0" prefWidth="281.0" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="cancelButton" alignment="CENTER" layoutX="76.0" layoutY="371.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="35.0" prefWidth="78.0" style="-fx-background-color: #000;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Calligraphy Italic" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="signUpButton" alignment="CENTER" contentDisplay="CENTER" layoutX="150.0" layoutY="371.0" mnemonicParsing="false" onAction="#signupButtonOnAction" style="-fx-background-color: #000;" text="Sign Up" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Calligraphy Italic" size="16.0" />
+               </font>
+            </Button>
+            <TextField fx:id="passwordTextField" layoutX="76.0" layoutY="283.0" promptText="Password" style="-fx-background-color: #1e1e1e;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="usernameTextField" layoutX="77.0" layoutY="225.0" promptText="Username" style="-fx-background-color: #1e1e1e;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="lastNameTextField" layoutX="76.0" layoutY="166.0" promptText="Last name" style="-fx-background-color: #1e1e1e;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="firstNameTextField" layoutX="77.0" layoutY="108.0" promptText="First name" style="-fx-background-color: #1e1e1e;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <Pane prefHeight="450.0" prefWidth="325.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="325.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="workImageView" fitHeight="400.0" fitWidth="325.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../image/butterfly.jpg" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+            </ImageView>
+            <Pane layoutY="390.0" prefHeight="60.0" prefWidth="325.0" style="-fx-background-color: #000;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
